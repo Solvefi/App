@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MIITApp.Views.Audiences"
+             >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="calendar.png" Clicked="Calendar_Clicked"/>
+        <ToolbarItem Icon="filter.png" Clicked="Filter_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <SearchBar x:Name="Поиск" HeightRequest="40"/>
+
+        <CollectionView >
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"
+                          ItemSpacing="10"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Time}"
+                               FontSize="Medium"
+                               TextColor="Black"/>
+                        <Label Text="{Binding Number}"
+                               FontSize="Medium"
+                               TextColor="Black"/>
+                        <Label Text="{Binding Build}"
+                               FontSize="Medium"
+                               TextColor="Black"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+
+</ContentPage>

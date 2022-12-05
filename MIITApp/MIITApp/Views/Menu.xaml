@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MIITApp.Views.Menu"
+            
+             xmlns:model="clr-namespace:MIITApp.Models">
+
+    <StackLayout>
+        <Image Source = "miit.png"/>
+        <Button Text="Сайт РУТ"
+         TextColor="Black"
+        Image="icon.png"
+        BackgroundColor="White"
+        BorderRadius="12"
+        BorderWidth="2"
+        BorderColor="White"
+        HeightRequest="65"
+        Margin="0,150,0,0"                         
+        Padding="30,0"/>
+        <Button Text="Поддержка"
+         TextColor="Black"
+        Image="icon.png"
+        BackgroundColor="White"
+        BorderRadius="12"
+        BorderWidth="2"
+        BorderColor="White"
+        HeightRequest="65"
+        Padding="30,0"/>
+        <Button Text="Сообщить об ошибке"
+        TextColor="Black"
+        Image="icon.png"
+        BackgroundColor="White"
+        BorderRadius="12"
+        BorderWidth="2"
+        BorderColor="White"
+        HeightRequest="65"
+        Padding="30,0"/>
+        <Button Text="Выход"
+        TextColor="#0778CB"
+        Image="icon.png"
+        BackgroundColor="White"
+        BorderRadius="12"
+        BorderWidth="2"
+        BorderColor="White"
+        HeightRequest="65"
+        Padding="30,0"/>
+    </StackLayout>
+    
+</ContentPage>

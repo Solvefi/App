@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MIITApp.Views.Calendar1">
+
+    <StackLayout>
+        <Label x:Name="label" Text="Выберите дату" FontSize="Medium" />
+        <DatePicker Format="D" DateSelected="datePicker_DateSelected">
+            <DatePicker.MinimumDate>9/01/2022</DatePicker.MinimumDate>
+            <DatePicker.MaximumDate>6/30/2023</DatePicker.MaximumDate>
+        </DatePicker>
+    </StackLayout>
+
+</ContentPage>
